@@ -1,0 +1,313 @@
+/* Estilos gerais */
+body {
+    font-family: Kanit, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("rm251-mind-16-f.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    width: 100%;
+    height: 0 auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 20px; /* Adicione margens para aumentar a distância entre os produtos */
+}
+
+.product img {
+    max-width: 200px; /* Reduza o tamanho das imagens aqui */
+}
+
+.price {
+    font-weight: bold;
+}
+
+button.add-to-cart {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button.add-to-cart:hover {
+    background-color: #e65000;
+}
+
+/* Estilos para o botão de exibir/ocultar */
+#toggle-cart-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#toggle-cart-button i {
+    vertical-align: middle; /* Alinhar o ícone verticalmente */
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+#toggle-cart-button .cart-text {
+    vertical-align: middle; /* Alinhar o texto verticalmente */
+}
+
+/* Estilos para o carrinho (oculto por padrão) */
+.cart {
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    transition: transform 0.3s;
+    transform: translateX(100%); /* Altera a posição para a direita */
+    z-index: 1; /* Reduz o índice de sobreposição para que o botão fique acima do carrinho */
+}
+
+.cart.visible {
+    transform: translateX(0);
+}
+
+.cart h2 {
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3; /* Aumenta o índice de sobreposição para que o modal esteja acima do carrinho */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para o botão "Finalizar Compra" */
+#checkout-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#checkout-button:hover {
+    background-color: #e65000;
+}
+
+/* Estilos para o botão "Voltar para a Tela Inicial" */
+#return-home-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#return-home-button:hover {
+    background-color: #000;
+}
+
+/* Estilos para o modal de confirmação de compra */
+#confirmation-modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#confirmation-modal .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+#confirmation-modal .close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+/* Estilo para a área FliperMaker e número de contato */
+.background-dark {
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.7
+    ); /* Cor de fundo escura com transparência */
+    position: relative;
+    width: 100%;
+    padding: 20px 0; /* Espaçamento vertical opcional */
+}
+
+.fliperMaker {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.fliperMaker h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fliperMaker p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.fliperMaker a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fliperMaker a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para os ícones de redes sociais */
+.redes_sociais .icone-facebook,
+.redes_sociais .icone-instagram,
+.redes_sociais .icone-whatsapp {
+    display: flex;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Estilos para as formas de pagamento */
+.formas_de_pagamento img {
+    max-width: 100%;
+}
+
+/* Estilos para os títulos das seções */
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Estilos para os parágrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos para links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
