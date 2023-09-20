@@ -23,9 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const products = [
-        { id: 1, name: "Produto 1", price: 100 },
-        { id: 2, name: "Produto 2", price: 150 },
-        { id: 3, name: "Produto 3", price: 80 },
+        { id: 1, name: "Produto 1", price: 3.500,00 },
+        { id: 2, name: "Produto 2", price: 1.600,00 },
     ];
 
     products.forEach((product, index) => {
