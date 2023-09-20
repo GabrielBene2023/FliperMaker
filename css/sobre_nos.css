@@ -1,4 +1,3 @@
-/* Estilos gerais */
 body {
     font-family: Kanit, sans-serif;
     margin: 0;
@@ -8,15 +7,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
-/* Estilos do cabeçalho */
 header {
     width: 100%;
     height: 0 auto;
@@ -24,35 +19,28 @@ header {
     color: #fff;
     padding: 10px 0;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo h1 {
     margin: 0;
-
 }
-
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .menu li {
     display: inline;
     margin-right: 20px;
 }
-
 .menu a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-
-}/* Estilos para o botão de exibir/ocultar */
+}
 #toggle-cart-button {
     position: fixed;
     top: 20px;
@@ -64,17 +52,13 @@ nav {
     cursor: pointer;
     z-index: 2;
 }
-
 #toggle-cart-button i {
     vertical-align: middle; /* Alinhar o ícone verticalmente */
     margin-right: 5px; /* Espaço entre o ícone e o texto */
 }
-
 #toggle-cart-button .cart-text {
     vertical-align: middle; /* Alinhar o texto verticalmente */
 }
-
-/* Estilos para o carrinho (oculto por padrão) */
 .cart {
     background-color: #f4f4f4;
     position: fixed;
@@ -88,26 +72,21 @@ nav {
     transform: translateX(100%); /* Altera a posição para a direita */
     z-index: 1; /* Reduz o índice de sobreposição para que o botão fique acima do carrinho */
 }
-
 .cart.visible {
     transform: translateX(0);
 }
-
 .cart h2 {
     text-align: center;
 }
-
 #cart-items {
     list-style: none;
     padding: 0;
 }
-
 .cart-item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-
 #total-price {
     font-weight: bold;
     margin-top: 20px;
