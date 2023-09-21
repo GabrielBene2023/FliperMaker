@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const products = [
-        { id: 1, name: "Produto 1", price: 3.500,00 },
-        { id: 2, name: "Produto 2", price: 1.600,00 },
+        { id: 1, name: "Produto 1", price: 3500 },
+        { id: 2, name: "Produto 2", price: 1600 },
     ];
 
     products.forEach((product, index) => {
@@ -169,7 +169,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <button class="add-to-cart">Adicionar ao Carrinho</button>
         `;
 
-        // Mostrar o elemento de descrição dentro do modal
         const descriptionElement = modalContent.querySelector(".description");
         descriptionElement.style.display = "block";
 
