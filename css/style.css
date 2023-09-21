@@ -1,22 +1,14 @@
-/* Estilos gerais */
 body {
     font-family: Kanit, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("rm251-mind-16-f.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
-
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
-/* Estilos do cabeçalho */
 header {
     width: 100%;
     height: 0 auto;
@@ -33,7 +25,6 @@ nav {
 
 .logo h1 {
     margin: 0;
-
 }
 
 .menu ul {
@@ -57,7 +48,7 @@ nav {
     overflow: hidden;
     position: relative;
     width: 100%;
-    max-width: 800px; /* Ajuste de acordo com o tamanho desejado */
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -71,7 +62,6 @@ nav {
     height: auto;
 }
 
-/* Estilos para o botão de exibir/ocultar */
 #toggle-cart-button {
     position: fixed;
     top: 20px;
@@ -85,15 +75,13 @@ nav {
 }
 
 #toggle-cart-button i {
-    vertical-align: middle; /* Alinhar o ícone verticalmente */
-    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle;
 }
 
 #toggle-cart-button .cart-text {
-    vertical-align: middle; /* Alinhar o texto verticalmente */
+    vertical-align: middle;
 }
 
-/* Estilos para o carrinho (oculto por padrão) */
 .cart {
     background-color: #f4f4f4;
     position: fixed;
@@ -104,87 +92,14 @@ nav {
     padding: 20px;
     overflow-y: auto;
     transition: transform 0.3s;
-    transform: translateX(100%); /* Altera a posição para a direita */
-    z-index: 1; /* Reduz o índice de sobreposição para que o botão fique acima do carrinho */
+    transform: translateX(100%);
+    z-index: 1;
 }
 
-.cart.visible {
-    transform: translateX(0);
-}
-
-.cart h2 {
-    text-align: center;
-}
-
-#cart-items {
-    list-style: none;
-    padding: 0;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-#total-price {
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-/* Estilos para o modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 3; /* Aumenta o índice de sobreposição para que o modal esteja acima do carrinho */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    position: relative;
-}
-
-.close-modal {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    cursor: pointer;
-}
-#product-details-modal .hidden-description {
-    display: none;
-}
-
-/* Estilos para o botão "Finalizar Compra" */
-#checkout-button {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-#checkout-button:hover {
-    background-color: #e65000;
-}
-
-/* Estilos para o conteúdo principal */
 main {
     padding: 20px;
 }
 
-/* Estilo para a área de contato */
 .contato {
     background-color: #f4f4f4;
     padding: 20px;
@@ -232,17 +147,11 @@ main {
     background-color: #0056b3;
 }
 
-/* Estilo para a área FliperMaker e número de contato */
 .background-dark {
-    background-color: rgba(
-        0,
-        0,
-        0,
-        0.7
-    ); /* Cor de fundo escura com transparência */
+    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
     width: 100%;
-    padding: 20px 0; /* Espaçamento vertical opcional */
+    padding: 20px 0;
 }
 
 .fliperMaker {
@@ -272,7 +181,6 @@ main {
     text-decoration: underline;
 }
 
-/* Estilos para os ícones de redes sociais */
 .redes_sociais .icone-facebook,
 .redes_sociais .icone-instagram,
 .redes_sociais .icone-whatsapp {
@@ -281,12 +189,10 @@ main {
     color: #007bff;
 }
 
-/* Estilos para as formas de pagamento */
 .formas_de_pagamento img {
     max-width: 100%;
 }
 
-/* Estilos para os títulos das seções */
 h2 {
     font-size: 24px;
     margin-top: 0;
@@ -296,13 +202,11 @@ h3 {
     font-size: 20px;
 }
 
-/* Estilos para os parágrafos */
 p {
     font-size: 16px;
     line-height: 1.5;
 }
 
-/* Estilos para links */
 a {
     color: #007bff;
     text-decoration: none;
