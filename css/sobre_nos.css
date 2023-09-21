@@ -2,16 +2,14 @@ body {
     font-family: Kanit, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("rm251-mind-16-f.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
 header {
     width: 100%;
     height: 0 auto;
@@ -19,23 +17,28 @@ header {
     color: #fff;
     padding: 10px 0;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo h1 {
     margin: 0;
 }
+
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 .menu li {
     display: inline;
     margin-right: 20px;
 }
+
 .menu a {
     text-decoration: none;
     color: #fff;
@@ -52,101 +55,68 @@ nav {
     cursor: pointer;
     z-index: 2;
 }
+
 #toggle-cart-button i {
-    vertical-align: middle; /* Alinhar o ícone verticalmente */
-    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle;
+    margin-right: 5px;
 }
+
 #toggle-cart-button .cart-text {
-    vertical-align: middle; /* Alinhar o texto verticalmente */
+    vertical-align: middle;
 }
-.cart {
-    background-color: #f4f4f4;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    padding: 20px;
-    overflow-y: auto;
-    transition: transform 0.3s;
-    transform: translateX(100%); /* Altera a posição para a direita */
-    z-index: 1; /* Reduz o índice de sobreposição para que o botão fique acima do carrinho */
-}
-.cart.visible {
-    transform: translateX(0);
-}
-.cart h2 {
-    text-align: center;
-}
-#cart-items {
-    list-style: none;
-    padding: 0;
-}
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-#total-price {
-    font-weight: bold;
-    margin-top: 20px;
-}
-/* Estilos para a seção "Quem Somos" */
-.about-us {
+
+.Sobre-nos {
     background-color: #f4f4f4;
     padding: 40px;
     text-align: center;
 }
 
-.about-us h2 {
+.Sobre-nos h2 {
     font-size: 24px;
     color: #333;
 }
 
-.about-us img {
+.Sobre-nos img {
     max-width: 100%;
     margin-top: 20px;
     border-radius: 10px;
 }
 
-.about-us p {
+.Sobre-nos p {
     font-size: 18px;
     line-height: 1.6;
     color: #555;
 }
 
-/* Estilos para a seção "Nossos Serviços" */
-.our-services {
+.nossos-serviços {
     background-color: #464545;
     color: #fff;
     padding: 40px;
 }
 
-.our-services h2 {
+.nossos-serviços h2 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.our-services ul {
+.nossos-serviços ul {
     list-style: none;
     padding: 0;
 }
 
-.our-services li {
+.nossos-serviços li {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-/* Estilos para a lista de serviços */
-.our-services ul li::before {
-    content: "\2022"; /* Cria um marcador de bala (•) antes de cada item da lista */
-    color: #ff6600; /* Cor da bala */
+.nossos-serviços ul li::before {
+    content: "\2022";
+    color: #ff6600;
     display: inline-block;
-    width: 1em; /* Espaço entre a bala e o texto */
-    margin-left: -1em; /* Move a bala para a esquerda para alinhá-la com o texto */
+    width: 1em;
+    margin-left: -1em;
 }
- 
-/* Estilo para a área de contato */
+
 .contato {
     background-color: #f4f4f4;
     padding: 20px;
@@ -194,17 +164,11 @@ nav {
     background-color: #0056b3;
 }
 
-/* Estilo para a área FliperMaker e número de contato */
 .background-dark {
-    background-color: rgba(
-        0,
-        0,
-        0,
-        0.7
-    ); /* Cor de fundo escura com transparência */
+    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
     width: 100%;
-    padding: 20px 0; /* Espaçamento vertical opcional */
+    padding: 20px 0;
 }
 
 .fliperMaker {
@@ -234,7 +198,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Estilos para os ícones de redes sociais */
 .redes_sociais .icone-facebook,
 .redes_sociais .icone-instagram,
 .redes_sociais .icone-whatsapp {
@@ -243,12 +206,10 @@ nav {
     color: #007bff;
 }
 
-/* Estilos para as formas de pagamento */
 .formas_de_pagamento img {
     max-width: 100%;
 }
 
-/* Estilos para os títulos das seções */
 h2 {
     font-size: 24px;
     margin-top: 0;
@@ -258,13 +219,11 @@ h3 {
     font-size: 20px;
 }
 
-/* Estilos para os parágrafos */
 p {
     font-size: 16px;
     line-height: 1.5;
 }
 
-/* Estilos para links */
 a {
     color: #007bff;
     text-decoration: none;
